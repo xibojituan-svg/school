@@ -344,6 +344,33 @@ td.school-name {
 }
 
 @media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  .hero-card {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  h2 {
+    font-size: 1.35rem;
+  }
+  .nav-brand {
+    font-size: 1.15rem;
+  }
+  th, td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .teacher-grid {
+    grid-template-columns: 1fr;
+  }
   .teacher-profile {
     flex-direction: column;
     align-items: center;
@@ -354,5 +381,8 @@ td.school-name {
   }
   .quote-box {
     text-align: left;
+  }
+  .map-container {
+    height: 200px;
   }
 }

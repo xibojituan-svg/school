@@ -22,7 +22,7 @@ function SchoolDetail() {
 
       <div className="hero-card glass-panel" style={{ borderTop: '4px solid var(--primary-color)' }}>
         <h1>{school.name}</h1>
-        <div style={{ display: 'flex', gap: '0.5rem', color: 'var(--text-muted)', marginBottom: '1.5rem', alignItems: 'center' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', color: 'var(--text-muted)', marginBottom: '1.5rem', alignItems: 'center' }}>
           <MapPin size={16} />
           <span>{school.address} ({school.region} ｜ {school.subRegion})</span>
           <span style={{ margin: '0 0.5rem' }}>•</span>
