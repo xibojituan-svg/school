@@ -20,6 +20,9 @@ function Home() {
         <p className="subtitle">
           聚焦闵行紫竹、静安市北与浦东张江，为您呈现最详实的升学与教育生态数据。
         </p>
+        <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <Milestone size={14} /> 数据说明：展示的升学率数据均已通过部分升学率查询网站（如家长帮、查查网等）及历年区级招考公开信息进行定性与定量验证。
+        </div>
 
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
           {regions.map(r => (
