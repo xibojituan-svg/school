@@ -58,6 +58,20 @@ function SchoolDetail() {
         ></iframe>
       </div>
 
+      {school.curriculumAnalysis && (
+        <div style={{ marginBottom: '3rem' }}>
+          <h2>🧠 核心课程设计原理 (第一性剖析)</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+            {school.curriculumAnalysis.map((item, idx) => (
+              <div key={idx} className="info-card" style={{ background: '#fafbfc', borderLeft: `4px solid ${['#4299e1', '#48bb78', '#ed8936', '#9f7aea'][idx % 4]}` }}>
+                <h3 style={{ color: ['#2b6cb0', '#2f855a', '#dd6b20', '#805ad5'][idx % 4] }}>{item.title}</h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <h2>📊 教育情报全息扫描</h2>
       <div className="grid-2">
         <div className="info-card">
