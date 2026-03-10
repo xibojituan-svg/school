@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { schools } from '../data/schools';
-import { MapPin, Search } from 'lucide-react';
+import { MapPin, Search, Milestone, Users, Zap, Award } from 'lucide-react';
 
 function Home() {
   const navigate = useNavigate();
@@ -43,6 +43,38 @@ function Home() {
           ))}
         </div>
       </div>
+
+      {filterRegion === '闵行区' && (
+        <div style={{
+          backgroundColor: '#fffcf5',
+          border: '1px solid #ecc94b',
+          borderRadius: '12px',
+          padding: '1.5rem',
+          margin: '0 auto 2rem auto',
+          maxWidth: '1200px',
+          boxShadow: '0 4px 6px rgba(236, 201, 75, 0.1)',
+          lineHeight: '1.7'
+        }}>
+          <h2 style={{ color: '#975a16', fontSize: '1.25rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Award size={20} />
+            闵行公办小学“卷王”如何诞生？(第一性原理剖析)
+          </h2>
+          <div style={{ fontSize: '0.95rem', color: '#4a5568', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div>
+              <strong style={{ color: '#744210', display: 'flex', alignItems: 'center', gap: '6px' }}><Milestone size={16} /> 宏观推手：高知人口筛选器</strong>
+              <p style={{ margin: '4px 0 0 0' }}>紫竹等板块的“卷”，本质不是资源极度匮乏，而是高质人口集聚。交大、华师大及大厂带来同质化极高的高知家长群，生源本身构成了难以逾越的壁垒。</p>
+            </div>
+            <div>
+              <strong style={{ color: '#744210', display: 'flex', alignItems: 'center', gap: '6px' }}><Users size={16} /> 微观生态：“既要又要”的降维打击</strong>
+              <p style={{ margin: '4px 0 0 0' }}>对下死磕统考成绩底线，对上追求全能素质教育。家长驱动学校在校内配置如编程、航模、武术等昂贵课程，“双减”后课后服务演变为高强度的提优补弱与作业清零。</p>
+            </div>
+            <div>
+              <strong style={{ color: '#744210', display: 'flex', alignItems: 'center', gap: '6px' }}><Zap size={16} /> 供给响应：企业化的高KPI运营</strong>
+              <p style={{ margin: '4px 0 0 0' }}>“卷王”校长采用现代企业级的高效运营，极其抓细节、控数据（如强调体能消耗的Health+策略），最大化超配周边大学与园区的产学研资源，形成三方合力推演的现象级闭环。</p>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="table-container">
         <table>
