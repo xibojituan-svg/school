@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紫竹小学 vs 大宁国际小学 - 择校分析报告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .header .date {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .nav {
+            background: #f8f9fa;
+            padding: 15px 40px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .nav a {
+            color: #495057;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        
+        .nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title .icon {
+            font-size: 28px;
+        }
+        
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .compare-table th {
+            background: #495057;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            width: 20%;
+        }
+        
+        .compare-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+        
+        .compare-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .school-a {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 4px solid #2196f3;
+        }
+        
+        .school-b {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+            border-left: 4px solid #9c27b0;
+        }
+        
+        .school-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .school-a .school-name {
+            color: #1565c0;
+        }
+        
+        .school-b .school-name {
+            color: #7b1fa2;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 2px;
+        }
+        
+        .tag-a {
+            background: #bbdefb;
+            color: #1565c0;
+        }
+        
+        .tag-b {
+            background: #e1bee7;
+            color: #7b1fa2;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #856404;
+        }
+        
+        .score {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        .score-a {
+            background: linear-gradient(135deg, #2196f3, #1976d2);
+        }
+        
+        .score-b {
+            background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+        }
+        
+        .winner {
+            background: #d4edda;
+            color: #155724;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        
+        .info-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .info-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .info-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .info-card li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #dee2e6;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .info-card li::before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .recommendation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .recommendation h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .recommendation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .recommendation-card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .recommendation-card h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .recommendation-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .recommendation-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .recommendation-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 14px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .footer p {
+            margin: 5px 0;
+        }
+        
+        .star-rating {
+            color: #ffc107;
+            font-size: 16px;
+        }
+        
+        .price-tag {
+            background: #28a745;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .warning-tag {
+            background: #dc3545;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .success-tag {
+            background: #28a745;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .compare-table th,
+            .compare-table td {
+                display: block;
+                width: 100%;
+            }
+            
+            .compare-table th {
+                background: #e9ecef;
+                color: #333;
+            }
+            
+            .nav {
+                padding: 10px 20px;
+            }
+            
+            .recommendation-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #667eea;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+        
+        .timeline-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏫 紫竹小学 vs 大宁国际小学</h1>
+            <p class="subtitle">择校分析报告 - 基于2025年最新数据</p>
+            <p class="date">报告生成时间：2025年1月 | 数据来源：全网公开信息</p>
+        </div>
+        
+        <div class="nav">
+            <a href="#basic">基本信息</a>
+            <a href="#education">教育质量</a>
+            <a href="#feature">课程特色</a>
+            <a href="#cost">成本分析</a>
+            <a href="#housing">周边住宅</a>
+            <a href="#recommend">最终建议</a>
+        </div>
+        
+        <div class="content">
+            <!-- 核心结论 -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">💡</span>核心结论</h2>
+                <div class="info-card">
+                    <h3>📌 关键发现</h3>
+                    <ul>
+                        <li><strong>紫竹小学</strong>：已通过紫竹高新区招商负责人傅佳斌确认，明年可入学，95%直升华二附初，市重点率75%+</li>
+                        <li><strong>大宁国际小学</strong>：需通过喜马拉雅HR协调，70%直升风华初，市重点率35-40%</li>
+                        <li><strong>通勤成本</strong>：住浦东→紫竹需搬家，住浦东→大宁无需搬家但通勤30-40分钟</li>
+                        <li><strong>教育趋势</strong>：紫竹的科创+体育双轨模式更契合未来教育改革方向</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 基本信息 -->
+            <div class="section" id="basic">
+                <h2 class="section-title"><span class="icon">📍</span>基本信息对比</h2>
+                <table class="compare-table">
+                    <tr>
+                        <th>对比维度</th>
+                        <td class="school-a">
+                            <div class="school-name">华东师范大学附属紫竹小学</div>
+                            <span class="tag tag-a">公办</span>
+                            <span class="tag tag-a">紫竹高新区</span>
+                        </td>
+                        <td class="school-b">
+                            <div class="school-name">大宁国际小学</div>
+                            <span class="tag tag-b">公办</span>
+                            <span class="tag tag-b">静安大宁</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>地址</th>
+                        <td class="school-a">闵行区紫凤路198号</td>
+                        <td class="school-b">静安区北宝兴路900号</td>
+                    </tr>
+                    <tr>
+                        <th>创办时间</th>
+                        <td class="school-a">2011年（华东师大紫竹基础教育园区）</td>
+                        <td class="school-b">2007年</td>
+                    </tr>
+                    <tr>
+                        <th>学费</th>
+                        <td class="school-a"><span class="highlight">义务教育免学费</span></td>
+                        <td class="school-b">境内班：免学费<br>境外班：约5万/年</td>
+                    </tr>
+                    <tr>
+                        <th>对口初中</th>
+                        <td class="school-a">
+                            <strong>华师大二附中附属初级中学</strong><br>
+                            <span class="winner">直升率95%</span>
+                        </td>
+                        <td class="school-b">
+                            <strong>风华初级中学</strong><br>
+                            直升率约70%
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- 教育质量 -->
+            <div class="section" id="education">
+                <h2 class="section-title"><span class="icon">🎓</span>教育质量对比</h2>
+                <table class="compare-table">
+                    <tr>
+                        <th>中考成绩</th>
+                        <td class="school-a">
+                            <div class="score score-a">A+</div>
+                            <strong>华二附初/华二紫竹：</strong><br>
+                            • 市重点率：<span class="highlight">75%+</span><br>
+                            • 四校八大录取率：全市前4<br>
+                            • 2024年：700分以上16人，最高分723.5<br>
+                            • 丘成桐数学领军计划、北大物理卓越计划入选
+                        </td>
+                        <td class="school-b">
+                            <div class="score score-b">A</div>
+                            <strong>风华初级中学：</strong><br>
+                            • 市重点率：<span class="highlight">35-40%</span><br>
+                            • 特色班市重点率：50%+<br>
+                            • 静安公办第二梯队<br>
+                            • 2024年：整体表现稳定
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>师资力量</th>
+                        <td class="school-a">
+                            • 华东师大直接输入师资<br>
+                            • 华师大教研体系支撑<br>
+                            • 特级教师+正高级教师团队<br>
+                            • 高校教授定期授课<br>
+                            • 紫竹高新区企业导师
+                        </td>
+                        <td class="school-b">
+                            • 特级数学名师坐镇<br>
+                            • 正高级教师/特级校长徐晓唯<br>
+                            • 静安本土优质师资<br>
+                            • 数学教学造诣深厚
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>师生比</th>
+                        <td class="school-a">约1:12（小班化）</td>
+                        <td class="school-b">约1:16</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- 课程特色 -->
+            <div class="section" id="feature">
+                <h2 class="section-title"><span class="icon">📚</span>课程特色对比</h2>
+                <table class="compare-table">
+                    <tr>
+                        <th>核心课程</th>
+                        <td class="school-a">
+                            <strong>RAINBOW跨学科课程</strong><br>
+                            • 武术（全国冠军级）<br>
+                            • 领导力课程<br>
+                            • 编程/人工智能<br>
+                            • 冰雪运动（上海稀缺）<br>
+                            • 管弦乐队<br>
+                            • 思维训练<br>
+                            <span class="winner">幼、小、初、高四学段贯通</span>
+                        </td>
+                        <td class="school-b">
+                            <strong>微笑教育</strong><br>
+                            • 数学领衔（特级名师）<br>
+                            • 英语强化<br>
+                            • 国际视野课程<br>
+                            • 走班教学<br>
+                            • 境外班（10%外籍学生）
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>体育特色</th>
+                        <td class="school-a">
+                            <div class="score score-a">S</div>
+                            • 全国啦啦操冠军<br>
+                            • 武术（全校普及）<br>
+                            • 花样跳绳全国冠军级<br>
+                            • 冰雪运动<br>
+                            • 每天体育课+30分钟大课间
+                        </td>
+                        <td class="school-b">
+                            <div class="score score-b">B</div>
+                            • 标准体育课程<br>
+                            • 无特殊体育优势
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>科创特色</th>
+                        <td class="school-a">
+                            <div class="score score-a">S</div>
+                            • 全国航空特色学校<br>
+                            • 无人机/机器人大赛承办校<br>
+                            • 航空航天特色项目<br>
+                            • 第37届全国青少年科技创新大赛一等奖<br>
+                            • 五大学科奥赛：2金7银3铜
+                        </td>
+                        <td class="school-b">
+                            <div class="score score-b">B+</div>
+                            • 数学思维训练<br>
+                            • 基础科学教育<br>
+                            • 相对传统
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- 成本分析 -->
+            <div class="section" id="cost">
+                <h2 class="section-title"><span class="icon">💰</span>成本分析对比</h2>
+                
+                <h3 style="margin: 20px 0 15px; color: #333;">紫竹小学方案（需搬家）</h3>
+                <table class="compare-table">
+                    <tr>
+                        <th>成本类型</th>
+                        <th>租房方案</th>
+                        <th>购房方案</th>
+                    </tr>
+                    <tr>
+                        <td>学费</td>
+                        <td>免学费</td>
+                        <td>免学费</td>
+                    </tr>
+                    <tr>
+                        <td>住房成本</td>
+                        <td>一房：5-6万/年<br>两房：7-8万/年</td>
+                        <td>首付165万+月供1.5万</td>
+                    </tr>
+                    <tr>
+                        <td>6年总成本</td>
+                        <td><span class="highlight">30-48万</span></td>
+                        <td><span class="highlight">273万+</span></td>
+                    </tr>
+                    <tr>
+                        <td>通勤成本</td>
+                        <td colspan="2">您至静安：每日50-70分钟（建议调岗至喜播紫竹）</td>
+                    </tr>
+                </table>
+                
+                <h3 style="margin: 20px 0 15px; color: #333;">大宁国际小学方案（无需搬家）</h3>
+                <table class="compare-table">
+                    <tr>
+                        <th>成本类型</th>
+                        <th>境内班</th>
+                        <th>境外班</th>
+                    </tr>
+                    <tr>
+                        <td>学费</td>
+                        <td>免学费</td>
+                        <td>5万/年</td>
+                    </tr>
+                    <tr>
+                        <td>住房成本</td>
+                        <td colspan="2">保留浦东住房，无额外成本</td>
+                    </tr>
+                    <tr>
+                        <td>6年总成本</td>
+                        <td><span class="highlight">0</span></td>
+                        <td><span class="highlight">30万</span></td>
+                    </tr>
+                    <tr>
+                        <td>通勤成本</td>
+                        <td colspan="2">孩子上学：30-40分钟（可接受）</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- 周边住宅 -->
+            <div class="section" id="housing">
+                <h2 class="section-title"><span class="icon">🏠</span>紫竹小学周边住宅</h2>
+                
+                <div class="info-card">
+                    <h3>核心对口小区</h3>
+                    <ul>
+                        <li><strong>紫竹半岛花园</strong> - 均价7.4万/㎡，紫竹标杆小区</li>
+                        <li><strong>兰香湖壹号</strong> - 均价8.5万/㎡，湖景高端住宅</li>
+                        <li><strong>兰香湖二号</strong> - 别墅10.5万/㎡，总价1700万起</li>
+                        <li><strong>万科青藤公园</strong> - 均价6.5-7万/㎡，万科品质</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>租房价格（2024-2025）</h3>
+                    <ul>
+                        <li>一室一厅（60-65㎡）：<span class="price-tag">4,300-4,800元/月</span></li>
+                        <li>两室一厅（80-90㎡）：<span class="price-tag">5,500-6,500元/月</span></li>
+                        <li>三室两厅（95-140㎡）：<span class="price-tag">6,800-9,000元/月</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>紫竹高新区产业配套</h3>
+                    <ul>
+                        <li><strong>国际巨头</strong>：微软、英特尔、可口可乐、印孚瑟斯</li>
+                        <li><strong>央企国企</strong>：中国商飞、中广核集团、东方明珠</li>
+                        <li><strong>科技独角兽</strong>：触宝科技、柏楚电子、云轴信息</li>
+                        <li><strong>您的关联企业</strong>：喜播科技（已在紫竹纳税）</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>交通配套</h3>
+                    <ul>
+                        <li><strong>15号线（已运营）</strong>：紫竹高新区站、兰香湖南路站</li>
+                        <li><strong>23号线（2027年通车）</strong>：交大紫竹路站、华东师范大学站</li>
+                        <li><strong>自驾</strong>：S32申嘉湖高速、虹梅南路隧道</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 入学可行性 -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">✅</span>入学可行性分析</h2>
+                <table class="compare-table">
+                    <tr>
+                        <th>入学通道</th>
+                        <td class="school-a">
+                            <strong>紫竹高新区重点企业人才子女</strong><br>
+                            • 傅佳斌（数字创意港总经理）已承诺<br>
+                            • 喜播在紫竹有税收贡献<br>
+                            • <span class="highlight">明年可入学</span><br>
+                            • 无需购买学区房<br>
+                            <span class="success-tag">确定性极高</span>
+                        </td>
+                        <td class="school-b">
+                            <strong>喜马拉雅HR协调</strong><br>
+                            • 市北高新重点企业<br>
+                            • 需HR内部申请<br>
+                            • 可能需境外班（5万/年）<br>
+                            • 协调难度中等<br>
+                            <span class="warning-tag">需进一步确认</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>政策趋势</th>
+                        <td class="school-a">
+                            紫竹高新区招商配套政策<br>
+                            傅佳斌权限内可直接协调<br>
+                            <span class="warning-tag">建议尽快落实，政策可能收紧</span>
+                        </td>
+                        <td class="school-b">
+                            静安区重点企业人才政策<br>
+                            需通过HR申请<br>
+                            协调周期不确定
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- 最终建议 -->
+            <div class="recommendation" id="recommend">
+                <h2>🎯 最终建议</h2>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <h3>🏆 推荐：紫竹小学</h3>
+                        <ul>
+                            <li>✅ 教育质量顶级（科创+体育双轨）</li>
+                            <li>✅ 升学天花板高（华二系→四校八大）</li>
+                            <li>✅ 入学确定性极高（傅佳斌承诺）</li>
+                            <li>✅ 契合未来教育趋势</li>
+                            <li>✅ 95%直升，避免小升初焦虑</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-size: 14px; opacity: 0.9;">
+                            <strong>适合：</strong>追求顶级教育、愿意搬家、长期看好紫竹发展
+                        </p>
+                    </div>
+                    <div class="recommendation-card">
+                        <h3>🥈 备选：大宁国际小学</h3>
+                        <ul>
+                            <li>✅ 数学教育顶尖（特级名师）</li>
+                            <li>✅ 无需搬家，保留现有住房</li>
+                            <li>✅ 通勤相对便利</li>
+                            <li>✅ 成本较低（境内班免费）</li>
+                            <li>✅ 静安教育资源丰富</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-size: 14px; opacity: 0.9;">
+                            <strong>适合：</strong>平衡教育与生活、预算有限、不想折腾
+                        </p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                    <h3 style="margin-bottom: 15px;">📋 行动建议</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>第一步（立即）</h4>
+                            <p>联系傅佳斌，确认紫竹小学入学具体流程、所需材料、时间节点，争取书面确认</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>第二步（1个月内）</h4>
+                            <p>同时联系喜马拉雅HR，了解大宁国际小学协调可能性，作为Plan B</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>第三步（2-3个月）</h4>
+                            <p>如确定紫竹小学，开始寻找紫竹半岛租房；考虑申请调岗至喜播紫竹办公点</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>第四步（入学前）</h4>
+                            <p>办理居住证、准备入学材料、完成搬家，确保顺利入学</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>📊 数据来源：华东师范大学官网、紫竹高新区官网、静安区政府、链家、贝壳找房等全网公开信息</p>
+            <p>⏰ 报告生成时间：2025年1月 | 建议联系学校或教育局获取最新招生政策</p>
+            <p>💡 本报告仅供参考，具体入学政策以官方发布为准</p>
+        </div>
+    </div>
+</body>
+</html>
