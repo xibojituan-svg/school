@@ -58,28 +58,65 @@ function Home() {
       }}>
         <h2 style={{ color: '#0369a1', fontSize: '1.25rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
           <MapPin size={20} />
-          浦东康桥渡桥路78弄周边教育资源详细档案
+          浦东新区康桥与周浦地区教育资源详细档案
         </h2>
         
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
           <div>
-            <h3 style={{ color: '#0c4a6e', fontSize: '1.1rem', borderBottom: '2px solid #bae6fd', paddingBottom: '0.5rem', marginBottom: '1rem' }}>幼儿园板块</h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <h3 style={{ color: '#0c4a6e', fontSize: '1.1rem', borderBottom: '2px solid #bae6fd', paddingBottom: '0.5rem', marginBottom: '1rem', position: 'sticky', top: 0, backgroundColor: '#f0f9ff', zIndex: 10 }}>幼儿园板块</h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxHeight: '500px', overflowY: 'auto', paddingRight: '8px' }}>
+              
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区周浦幼儿园</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：秀康部/公元部/万达部/交医部/康景部</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 约175-700元/月 (依公办定级标准)<br/>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
               <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
                 <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区康桥幼儿园</div>
                 <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：渡桥路202号附近</div>
                 <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
                   <strong>学费：</strong> 约175-700元/月 (依公办定级标准)<br/>
-                  <strong>官网：</strong> 无独立官网，见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
                 </div>
               </div>
 
               <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
-                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区周浦幼儿园 (秀康部)</div>
-                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：秀康路536号</div>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区澧溪幼儿园</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：澧溪部/万达部/瑞阳部/韵涛部</div>
                 <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
                   <strong>学费：</strong> 约175-700元/月 (依公办定级标准)<br/>
-                  <strong>官网：</strong> 无独立官网，见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区康桥第一幼儿园</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：康桥地区</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 约175-700元/月 (依公办定级标准)<br/>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区康桥第二幼儿园</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：康桥地区</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 约175-700元/月 (依公办定级标准)<br/>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区周东幼儿园</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：周东部/吉祥部</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 约175-700元/月 (依公办定级标准)<br/>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
                 </div>
               </div>
 
@@ -91,18 +128,28 @@ function Home() {
                   <strong>官网：</strong> <a href="https://shivy-edu.cn" target="_blank" rel="noreferrer" style={{ color: '#d97706' }}>shivy-edu.cn</a>
                 </div>
               </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #fef3c7' }}>
+                <div style={{ fontWeight: 600, color: '#b45309', fontSize: '1.05rem', marginBottom: '4px' }}>上海浦东德英乐周浦幼儿园</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：民办 | 地址：周康路408号</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 需咨询园方（较高）<br/>
+                  <strong>官网：</strong> <a href="https://www.dtd-edu.cn" target="_blank" rel="noreferrer" style={{ color: '#d97706' }}>dtd-edu.cn(德英乐)</a>
+                </div>
+              </div>
             </div>
           </div>
           
           <div>
-            <h3 style={{ color: '#0c4a6e', fontSize: '1.1rem', borderBottom: '2px solid #bae6fd', paddingBottom: '0.5rem', marginBottom: '1rem' }}>小学板块</h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <h3 style={{ color: '#0c4a6e', fontSize: '1.1rem', borderBottom: '2px solid #bae6fd', paddingBottom: '0.5rem', marginBottom: '1rem', position: 'sticky', top: 0, backgroundColor: '#f0f9ff', zIndex: 10 }}>小学板块</h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxHeight: '500px', overflowY: 'auto', paddingRight: '8px' }}>
+              
               <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
                 <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区康桥小学</div>
                 <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：梓康路120号</div>
                 <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
                   <strong>学费：</strong> 义务教育免学费<br/>
-                  <strong>官网：</strong> 无独立官网，见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
                 </div>
               </div>
 
@@ -111,7 +158,43 @@ function Home() {
                 <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：上南路6625弄110号(康煦校区)等</div>
                 <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
                   <strong>学费：</strong> 义务教育免学费<br/>
-                  <strong>官网：</strong> 无独立官网，见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区周浦小学</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：文康路校区等</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 义务教育免学费<br/>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区周浦第二小学</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：公元新村校区/瑞建路校区等</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 义务教育免学费<br/>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区周浦第三小学</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：鹤洁路校区/东南新村校区等</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 义务教育免学费<br/>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区傅雷小学</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：周浦镇周边</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 义务教育免学费<br/>
+                  <strong>官网：</strong> 见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
                 </div>
               </div>
 
