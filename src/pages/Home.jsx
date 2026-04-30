@@ -47,6 +47,97 @@ function Home() {
         </div>
       </div>
 
+      <div style={{
+        backgroundColor: '#f0f9ff',
+        border: '1px solid #bae6fd',
+        borderRadius: '12px',
+        padding: '1.5rem',
+        margin: '0 auto 2rem auto',
+        maxWidth: '1200px',
+        boxShadow: '0 4px 6px rgba(186, 230, 253, 0.2)',
+      }}>
+        <h2 style={{ color: '#0369a1', fontSize: '1.25rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <MapPin size={20} />
+          浦东康桥渡桥路78弄周边教育资源详细档案
+        </h2>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div>
+            <h3 style={{ color: '#0c4a6e', fontSize: '1.1rem', borderBottom: '2px solid #bae6fd', paddingBottom: '0.5rem', marginBottom: '1rem' }}>幼儿园板块</h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区康桥幼儿园</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：渡桥路202号附近</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 约175-700元/月 (依公办定级标准)<br/>
+                  <strong>官网：</strong> 无独立官网，见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区周浦幼儿园 (秀康部)</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：秀康路536号</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 约175-700元/月 (依公办定级标准)<br/>
+                  <strong>官网：</strong> 无独立官网，见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #fef3c7' }}>
+                <div style={{ fontWeight: 600, color: '#b45309', fontSize: '1.05rem', marginBottom: '4px' }}>上海浦东新区民办常青藤幼儿园</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：民办双语 | 地址：秀沿路816号</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 约 14,800元/月 (具体以园方为准)<br/>
+                  <strong>官网：</strong> <a href="https://shivy-edu.cn" target="_blank" rel="noreferrer" style={{ color: '#d97706' }}>shivy-edu.cn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h3 style={{ color: '#0c4a6e', fontSize: '1.1rem', borderBottom: '2px solid #bae6fd', paddingBottom: '0.5rem', marginBottom: '1rem' }}>小学板块</h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区康桥小学</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：梓康路120号</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 义务教育免学费<br/>
+                  <strong>官网：</strong> 无独立官网，见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区康桥实验小学</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办 | 地址：上南路6625弄110号(康煦校区)等</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 义务教育免学费<br/>
+                  <strong>官网：</strong> 无独立官网，见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局发布</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #e0f2fe' }}>
+                <div style={{ fontWeight: 600, color: '#0369a1', fontSize: '1.05rem', marginBottom: '4px' }}>上海市浦东新区建平秀沈学校</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：公办九年一贯制 (预计25年9月启用) | 地址：秀沈路177号</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 义务教育免学费<br/>
+                  <strong>官网：</strong> 统筹发布见 <a href="https://www.pudong.gov.cn" target="_blank" rel="noreferrer" style={{ color: '#0284c7' }}>浦东教育局官网</a>
+                </div>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '8px', border: '1px solid #fef3c7' }}>
+                <div style={{ fontWeight: 600, color: '#b45309', fontSize: '1.05rem', marginBottom: '4px' }}>上海浦东新区民办常青藤小学</div>
+                <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '8px' }}>性质：民办双语 | 地址：秀沿路800号</div>
+                <div style={{ fontSize: '0.9rem', color: '#334155', lineHeight: '1.5' }}>
+                  <strong>学费：</strong> 54,000元/学期<br/>
+                  <strong>官网：</strong> <a href="http://www.shivy-edu.cn" target="_blank" rel="noreferrer" style={{ color: '#d97706' }}>www.shivy-edu.cn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       {filterRegion === '闵行区' && (
         <div style={{
           backgroundColor: '#fffcf5',
